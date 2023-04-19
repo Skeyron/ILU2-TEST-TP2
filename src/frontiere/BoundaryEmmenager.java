@@ -56,7 +56,7 @@ public class BoundaryEmmenager {
 			}
 			
 		} while (min_pot >= max_pot);
-		controlEmmenager.ajouterDuide(nomVisiteur, force, min_pot, max_pot);
+		controlEmmenager.ajouterDruide(nomVisiteur, force, min_pot, max_pot);
 		
 	}
 }

@@ -226,5 +226,18 @@ public class Village {
 			return donnees;
 		}
 	}
-
+	public static void main(String[] args) {
+		Village vill = new Village("allo", 10, 2);
+		vill.setChef(new Chef("henry", 4, vill));
+		
+		Gaulois as = new Gaulois("Astérix", 4);
+		Druide pano = new Druide("Panoramix", 2, 3, 4);
+		
+		vill.ajouterHabitant(as);
+		vill.ajouterHabitant(pano);
+		
+		System.out.println(vill.donnerVillageois()[0]);
+		System.out.println(vill.donnerVillageois()[1]);
+		System.out.println(vill.donnerVillageois()[2]);
+	}
 }
